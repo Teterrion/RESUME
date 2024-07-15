@@ -1,0 +1,134 @@
+#stars-js {
+    background:$main;
+    display: flex;
+    vertical-align: bottom;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .stars-js-canvis-el{
+        height: 100vh
+    }
+}
+
+.header{
+    font-family: "";
+    z-index:1;
+    text-align:center;
+    color:#FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .site-title{
+        font-size: 50px;
+        display:block;
+        line-height: 1;
+        color:#FFF;
+        @media only screen and (min-width:Scut){
+            margin: 0;
+            font-size: 80px;
+        }
+    }
+    .site-description{
+        font-size: 20px;
+        display:block;
+        line-height:1;
+        color:#FFF;
+        margin-top: 10px;
+        @media only screen and (min-width:Scut){
+            font-size:36px;
+        }
+    }
+}
+
+.header-links{
+    margin: 10px;
+    .link{
+        color:#FFF;
+        text-decoration:none;
+        font-size: 15px;
+        margin: 10px;
+        @media only screen and (min-width:Scut){
+            font-size: 20px;
+        }
+    }
+}
+.header-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+        outline: 0;
+        border: none;
+        outline-style: none;
+        -moz-outline-style: none;
+
+        padding: none;
+        padding: none;
+        margin: none;
+    }
+    .icon{
+        text-align: center;
+        color:#FFF;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        border: 2px;
+        transition:all .5s;
+        &:hover 
+        {
+            color: $main;
+            background: #FFF;
+        }
+    @media only screen and (min-width:Scut)
+        {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        }
+    }
+
+    .down{
+        color:#FFF;
+        position: absolute;
+        bottom: 25px;
+        width: 100px;
+        margin: 0 auto;
+        display: block;
+        text-align:center;
+        font-size: 30px;
+        line-height:30px;
+        cursor: pointer;
+
+        outline: 0;
+        border: none;
+        outline-style:none;
+        -moz-outline-style:none;
+        .icon{
+            position: absolute;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            top: 50%;
+            left: 50;
+            -webkit-transform: translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            fill: #fff;
+            -webkit-animation: pulse 1.3s infinite;
+            animation: pulse 1.4s infinite;
+            &:hover{
+                color:$sec;
+            }
+            &:hover{
+                color:$sec;
+            }
+        }
+    }
